@@ -1,0 +1,21 @@
+.container {
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  height: 25vh;
+}
+.title {
+  color: rgb(214, 214, 214);
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 644px) {
+  .title {
+    text-align: center;
+  }
+}
+
+.desc {
+  color: white;
+  text-align: center;
+}

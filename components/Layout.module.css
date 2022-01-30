@@ -1,0 +1,22 @@
+.textContainer {
+  background-color: transparent;
+  position: absolute;
+  top: 40vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.textContainer h2 {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+.textContainer p {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+}
