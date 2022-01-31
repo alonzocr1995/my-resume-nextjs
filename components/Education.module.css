@@ -18,6 +18,14 @@
   align-items: center;
   justify-content: space-between;
 }
+@media only screen and (max-width: 670px) {
+  .container {
+    font-size: 18px;
+  }
+  .content {
+    width: 85%;
+  }
+}
 
 .innerContent a {
   color: rgb(14, 23, 41);
