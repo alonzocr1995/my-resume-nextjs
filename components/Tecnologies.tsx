@@ -41,7 +41,7 @@ const Tecnologies = () => {
           <h3>Frontend</h3>
           <div>
             <span>React</span>
-            <span>React Native</span>
+            <span>React Native(With Expo)</span>
           </div>
         </div>
         <div className={classes.tecContent}>
