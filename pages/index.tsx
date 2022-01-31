@@ -7,6 +7,8 @@ const HomePage = () => {
   return (
     <Fragment>
       <Head>
+        <link rel="icon" href="" />
+
         <title>Alonzo Ramirez</title>
         <meta
           name="description"

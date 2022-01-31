@@ -1,4 +1,4 @@
-import { GitHub, LinkedIn, GetApp } from "@material-ui/icons";
+import { GitHub, LinkedIn, GetApp, CloudDownload } from "@material-ui/icons";
 import axios from "axios";
 import fileDownload from "js-file-download";
 import Link from "next/link";
@@ -36,19 +36,18 @@ const Navigation = () => {
         <li>
           <LinkedIn />
           <Link href="https://www.linkedin.com/in/luis-alonzo-ramirez-7175981b4/">
-            <a target="_blank"> LinkedIn</a>
+            <a target="_blank">LinkedIn</a>
           </Link>
         </li>
         <li>
           <GitHub />
           <Link href="https://github.com/alonzocr1995?tab=repositories">
-            <a target="_blank"> Github</a>
+            <a target="_blank">Github</a>
           </Link>
         </li>
         <li>
-          <button onClick={download}>
-            <GetApp /> Resume
-          </button>
+          <GetApp />
+          <span onClick={download}>Resume</span>
         </li>
       </ul>
     </nav>
