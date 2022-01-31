@@ -8,6 +8,8 @@ const Layout = () => {
   return (
     <div>
       <style jsx global>{`
+        @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&family=Urbanist:wght@100&display=swap");
+
         body {
           margin: 0;
           font-family: "Source Sans Pro", sans-serif;
