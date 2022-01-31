@@ -27,9 +27,7 @@ const Navigation = () => {
   return (
     <nav className={classes.navContainer}>
       <div className={classes.logoContainer}>
-        <Link href="/">
-          <h3>Alonzo Ramirez</h3>
-        </Link>
+        <h3>Alonzo Ramirez</h3>
       </div>
 
       <ul className={classes.listContainer}>
