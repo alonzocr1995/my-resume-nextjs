@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Head from "next/head";
 import Layout from "../components/Layout";
+import Resume from "../components/Resume";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
         />
       </Head>
       <Layout />
+      <Resume />
     </Fragment>
   );
 };

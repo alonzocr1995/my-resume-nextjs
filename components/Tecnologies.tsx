@@ -42,7 +42,6 @@ const Tecnologies = () => {
           <div>
             <span>React</span>
             <span>React Native</span>
-            <span>Angular (Beginner)</span>
           </div>
         </div>
         <div className={classes.tecContent}>

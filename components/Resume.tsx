@@ -1,36 +1,15 @@
 import React, { Fragment } from "react";
 import Navigation from "./Navigation";
 import classes from "./Resume.module.css";
-import ResumeProfile from "./Profile";
 import AboutMe from "./AboutMe";
 import Education from "./Education";
 import Tecnologies from "./Tecnologies";
 import Footer from "./Footer";
-import axios from "axios";
-import fileDownload from "js-file-download";
-import { GetApp } from "@material-ui/icons";
 
 const Resume = () => {
-  const download = async () => {
-    try {
-      const res = await axios.get(
-        "https://alonzofiles.s3.amazonaws.com/resumes/resumeEN.pdf",
-        {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-          },
-          responseType: "blob",
-        }
-      );
-
-      fileDownload(res.data, "resume.pdf");
-    } catch (error) {
-      console.log("Error--", error);
-    }
-  };
   return (
     <Fragment>
-      <Navigation />
+      {/* <Navigation /> */}
 
       <style jsx global>{`
         body {
@@ -40,7 +19,7 @@ const Resume = () => {
         }
       `}</style>
 
-      <div className={classes.container}>
+      {/* <div className={classes.container}>
         <div className={classes.profileContainer}>
           <ResumeProfile />
         </div>
@@ -49,7 +28,7 @@ const Resume = () => {
           Download My Resume
           <GetApp />
         </button>
-      </div>
+      </div> */}
       <AboutMe />
       <Education />
       <Tecnologies />

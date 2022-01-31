@@ -2,24 +2,6 @@ import React from "react";
 import classes from "./Profile.module.css";
 
 const Profile = () => {
-  // const download = async () => {
-  //   try {
-  //     const res = await axios.get(
-  //       "https://alonzofiles.s3.amazonaws.com/resumes/resume.pdf",
-  //       {
-  //         headers: {
-  //           "Access-Control-Allow-Origin": "*",
-  //         },
-  //         responseType: "blob",
-  //       }
-  //     );
-
-  //     fileDownload(res.data, "resume.pdf");
-  //   } catch (error) {
-  //     console.log("Error--", error);
-  //   }
-  // };
-
   return (
     <div className={classes.container}>
       <img

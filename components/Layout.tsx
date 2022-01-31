@@ -2,6 +2,7 @@ import Navigation from "./Navigation";
 import classes from "./Layout.module.css";
 import Background from "../UI/Background";
 import Footer from "./Footer";
+import Profile from "./Profile";
 
 const Layout = () => {
   return (
@@ -16,11 +17,12 @@ const Layout = () => {
       <Navigation />
 
       <div className={classes.textContainer}>
-        <h2>Luis Alonzo Ramirez C.</h2>
+        {/* <h2>Luis Alonzo Ramirez C.</h2>
         <p>
           Software Developer with expertise in various tecnologies, ready and
           eager to bring the best value to your organization and it's clients.
-        </p>
+        </p> */}
+        <Profile />
       </div>
 
       <Background />

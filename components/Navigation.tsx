@@ -1,9 +1,29 @@
-import { GitHub, FileCopyOutlined, LinkedIn } from "@material-ui/icons";
+import { GitHub, LinkedIn, GetApp } from "@material-ui/icons";
+import axios from "axios";
+import fileDownload from "js-file-download";
 import Link from "next/link";
 import React from "react";
 import classes from "./Navigation.module.css";
 
 const Navigation = () => {
+  const download = async () => {
+    try {
+      const res = await axios.get(
+        "https://alonzofiles.s3.amazonaws.com/resumes/resumeEN.pdf",
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+          },
+          responseType: "blob",
+        }
+      );
+
+      fileDownload(res.data, "resume.pdf");
+    } catch (error) {
+      console.log("Error--", error);
+    }
+  };
+
   return (
     <nav className={classes.navContainer}>
       <div className={classes.logoContainer}>
@@ -26,8 +46,9 @@ const Navigation = () => {
           </Link>
         </li>
         <li>
-          <FileCopyOutlined />
-          <Link href="/resume">Resume</Link>
+          <button onClick={download}>
+            <GetApp /> Resume
+          </button>
         </li>
       </ul>
     </nav>

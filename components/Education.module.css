@@ -7,6 +7,7 @@
   font-size: 24px;
   flex-direction: column;
   background-color: rgb(226, 226, 226);
+  z-index: 1;
 }
 
 .content {
@@ -17,6 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1;
 }
 @media only screen and (max-width: 670px) {
   .container {
@@ -33,4 +35,5 @@
   font-weight: 600;
 
   padding: 2px;
+  z-index: 1;
 }
