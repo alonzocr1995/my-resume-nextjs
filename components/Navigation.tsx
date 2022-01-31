@@ -1,4 +1,12 @@
-import { GitHub, LinkedIn, GetApp, CloudDownload } from "@material-ui/icons";
+import {
+  GitHub,
+  LinkedIn,
+  GetApp,
+  CloudDownload,
+  AssignmentReturn,
+  AssignmentReturned,
+  FontDownload,
+} from "@material-ui/icons";
 import axios from "axios";
 import fileDownload from "js-file-download";
 import Link from "next/link";
@@ -30,24 +38,30 @@ const Navigation = () => {
         <h3>Alonzo Ramirez</h3>
       </div>
 
-      <ul className={classes.listContainer}>
-        <li>
-          <LinkedIn />
+      <div className={classes.listContainer}>
+        <div>
           <Link href="https://www.linkedin.com/in/luis-alonzo-ramirez-7175981b4/">
-            <a target="_blank">LinkedIn</a>
+            <a target="_blank">
+              <LinkedIn style={{ paddingRight: "3px" }} />
+              LinkedIn
+            </a>
           </Link>
-        </li>
-        <li>
-          <GitHub />
+        </div>
+        <div>
           <Link href="https://github.com/alonzocr1995?tab=repositories">
-            <a target="_blank">Github</a>
+            <a target="_blank">
+              <GitHub style={{ paddingRight: "3px" }} />
+              Github
+            </a>
           </Link>
-        </li>
-        <li>
-          <GetApp />
-          <span onClick={download}>Resume</span>
-        </li>
-      </ul>
+        </div>
+        <div>
+          <span onClick={download}>
+            <AssignmentReturned style={{ paddingRight: "3px" }} />
+            Resume
+          </span>
+        </div>
+      </div>
     </nav>
   );
 };

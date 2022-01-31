@@ -13,7 +13,7 @@ const Profile = () => {
       <span>Software Developer</span>
 
       <div>
-        <a href="mailto: alonzowebdev@gmail.com">
+        <a href="mailto: alonzowebdev@gmail.com" target="_blank">
           <button className={classes.contactButton}>CONTACT</button>
         </a>
       </div>
