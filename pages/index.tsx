@@ -1,21 +1,18 @@
 import React, { Fragment } from "react";
 import Head from "next/head";
-import Layout from "../components/Layout";
 import Resume from "../components/Resume";
 
 const HomePage = () => {
   return (
     <Fragment>
       <Head>
-        <link rel="icon" href="" />
-
         <title>Alonzo Ramirez</title>
         <meta
           name="description"
-          content="Software Developer with expertise in various tecnologies. Specializing on Full Stack software development"
+          content="Software Developer with expertise in various technologies, very
+          motivated and eager to bring the most value to the organization."
         />
       </Head>
-      <Layout />
       <Resume />
     </Fragment>
   );

@@ -4,7 +4,7 @@ import Background from "../UI/Background";
 import Footer from "./Footer";
 import Profile from "./Profile";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <div>
       <style jsx global>{`
@@ -16,6 +16,7 @@ const Layout = () => {
           font-family: "Urbanist", sans-serif;
         }
       `}</style>
+
       <Navigation />
 
       <div className={classes.textContainer}>
@@ -28,6 +29,8 @@ const Layout = () => {
       </div>
 
       <Background />
+      {children}
+
       <Footer />
     </div>
   );
